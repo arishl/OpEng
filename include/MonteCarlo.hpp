@@ -2,18 +2,19 @@
 #define MONTECARLO_HPP
  
 #include "Option.hpp"
-
+#include <vector>
+using Matrix = std::vector<std::vector<double>>;
 class MonteCarlo 
 {
 public:
-    MonteCarlo(Option& option, int numIterations);
-    void RunSimulation(int numIterations);
-    void PrintResult() const;
-    void clearResult();
+
+    static void SimulatePathChunk(Matrix &paths, int start, int end, const Option &option, int steps, unsigned int seed);
+
+    static double ParallelAverage(const std::vector<double> &data, int num_threads);
+
+    static double LSMPricer(const Option &option, int steps, int iterations, int num_threads);
+
 private:
-    Option& _option;
-    const int _numIterations;
-    double _result;
 };
 
 #endif // MONTECARLO_HPP

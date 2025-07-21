@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.14)
 
 # Project Name and Version
-project(MONTECARLOOPTIONS VERSION 0.1 LANGUAGES CXX)
+project(OpEng VERSION 0.1 LANGUAGES CXX)
 
 # C++ Standard
 set(CMAKE_CXX_STANDARD 20)
@@ -17,6 +17,7 @@ include_directories(${PROJECT_SOURCE_DIR}/include)
 file(GLOB_RECURSE SOURCES
      ${PROJECT_SOURCE_DIR}/src/*.cpp
 )
+include_directories(${CMAKE_SOURCE_DIR}/include/eigen)
 
 # Executable
 add_executable(${PROJECT_NAME} ${SOURCES})
