@@ -73,6 +73,6 @@ int main(const int argc, char* argv[]) {
     std::cout << "Simulations:     " << iterations << "\n";
     std::cout << "Threads Used:    " << threads << "\n";
     std::cout << "Option Price:    " << price << "\n";
-
+    /////
     return 0;
 }
