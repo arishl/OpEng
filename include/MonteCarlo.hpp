@@ -4,6 +4,8 @@
 #include "Option.hpp"
 #include <vector>
 using Matrix = std::vector<std::vector<double>>;
+using Steps = int;
+using Iterations = int;
 class MonteCarlo 
 {
 public:
