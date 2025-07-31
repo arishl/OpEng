@@ -1,1 +1,1 @@
-Option Pricer for American Options using a multithreaed Longstaff-Schwartz Least Square Monte Carlo Method.
+Option Pricer for American Options using a multithreaded Longstaff-Schwartz Least Square Monte Carlo simulation.
